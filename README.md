@@ -1,6 +1,8 @@
-# ListOfAuthors
+# NG Playground
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+
+Nota Bene: This is an Angular project that I am using to experiment with new concepts as I learn them through various tutorials. Please don't expect anything serious from this!
 
 ## Development server
 
