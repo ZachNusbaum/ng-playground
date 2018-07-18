@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./title-caser.component.css']
 })
 export class TitleCaserComponent implements OnInit {
+  title: string;
 
   constructor() { }
 
