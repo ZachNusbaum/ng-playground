@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthorsComponent implements OnInit {
   title = 'List of authors';
+  authors = ['Nusbaum, Zach', 'Nusbaum, Lori'];
 
   constructor() { }
 
