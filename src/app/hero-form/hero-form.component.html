@@ -1,7 +1,7 @@
 <p class="lead">Form submitted? {{submitted}}</p>
 <div class="container">
   <h1>Hero Form</h1>
-  <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+  <form (ngSubmit)="onSubmit()" [hidden]="heroForm.submitted" #heroForm="ngForm">
     <div class="form-group">
       <label for="name">Name</label>
       <input type="text" class="form-control" id="name"
@@ -41,4 +41,23 @@
       New Hero
     </button>
   </form>
+  <div [hidden]="!heroForm.submitted">
+    <h1>Submission succeeded!</h1>
+    <table class="table table-sm table-bordered">
+      <tr>
+        <th>Name</th>
+        <td>{{model.name}}</td>
+      </tr>
+
+      <tr>
+        <th>Alter Ego</th>
+        <td>{{model.alterEgo}}</td>
+      </tr>
+
+      <tr>
+        <th>Super Power</th>
+        <td>{{model.power}}</td>
+      </tr>
+    </table>
+  </div>
 </div>
