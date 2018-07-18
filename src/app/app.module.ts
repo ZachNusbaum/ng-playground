@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { StarButtonComponent } from './star-button/star-button.component';
 import { TitleCaserComponent } from './title-caser/title-caser.component';
+import { TitlekasePipe } from './titlekase.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthorsComponent,
     StarButtonComponent,
-    TitleCaserComponent
+    TitleCaserComponent,
+    TitlekasePipe
   ],
   imports: [
     BrowserModule,
