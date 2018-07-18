@@ -14,16 +14,23 @@
 
     <div class="form-group">
       <label for="alterEgo">Alter Ego</label>
-      <input type="text" class="form-control" id="alterEgo"
-          [(ngModel)]="model.alterEgo" name="alterEgo">
+      <input type="text" class="form-control" id="alterEgo" required
+          [(ngModel)]="model.alterEgo" name="alterEgo" #alterEgo="ngModel">
+      <div class="alert alert-danger" [hidden]="alterEgo.valid || alterEgo.pristine">
+        Alter ego is required.
+      </div>
     </div>
 
     <div class="form-group">
       <label for="power">Hero Power</label>
       <select name="power" class="form-control" id="power" required
-          [(ngModel)]="model.power">
+          [(ngModel)]="model.power" #power="ngModel">
+          <option value=""></option>
         <option *ngFor="let power of powers" [value]="power">{{power}}</option>
       </select>
+      <div class="alert alert-danger" [hidden]="power.valid || power.pristine">
+        You need to choose a superpower.
+      </div>
     </div>
 
     <button type="submit" class="btn btn-success">Submit</button>
