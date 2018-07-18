@@ -8,6 +8,7 @@ import { AuthorsComponent } from './authors/authors.component';
 import { StarButtonComponent } from './star-button/star-button.component';
 import { TitleCaserComponent } from './title-caser/title-caser.component';
 import { TitlekasePipe } from './titlekase.pipe';
+import { HeroFormComponent } from './hero-form/hero-form.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TitlekasePipe } from './titlekase.pipe';
     AuthorsComponent,
     StarButtonComponent,
     TitleCaserComponent,
-    TitlekasePipe
+    TitlekasePipe,
+    HeroFormComponent
   ],
   imports: [
     BrowserModule,
