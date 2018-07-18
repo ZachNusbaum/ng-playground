@@ -3,3 +3,7 @@
 body {
   padding: 20px;
 }
+.favorited {
+  color: green;
+  font-weight: 900;
+}
